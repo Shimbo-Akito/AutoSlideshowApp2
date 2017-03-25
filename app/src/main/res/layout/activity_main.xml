@@ -1,0 +1,56 @@
+<?xml version="1.0" encoding="utf-8"?>
+<android.support.constraint.ConstraintLayout xmlns:android="http://schemas.android.com/apk/res/android"
+    xmlns:app="http://schemas.android.com/apk/res-auto"
+    xmlns:tools="http://schemas.android.com/tools"
+    android:layout_width="match_parent"
+    android:layout_height="match_parent"
+    tools:context="jp.techacademy.akito.shimbo.autoslideshowapp.MainActivity">
+
+    <ImageView
+        android:id="@+id/imageView"
+        android:layout_width="361dp"
+        android:layout_height="398dp"
+        app:srcCompat="@android:color/background_light"
+        android:layout_marginRight="8dp"
+        app:layout_constraintRight_toRightOf="parent"
+        app:layout_constraintTop_toTopOf="parent"
+        android:layout_marginTop="8dp"
+        app:layout_constraintBottom_toBottomOf="parent"
+        android:layout_marginBottom="8dp"
+        app:layout_constraintVertical_bias="0.093"
+        android:layout_marginLeft="8dp"
+        app:layout_constraintLeft_toLeftOf="parent" />
+
+    <Button
+        android:id="@+id/playbackButton"
+        android:layout_width="wrap_content"
+        android:layout_height="wrap_content"
+        android:text="再生"
+        android:layout_marginRight="128dp"
+        app:layout_constraintRight_toRightOf="parent"
+        android:layout_marginLeft="8dp"
+        app:layout_constraintLeft_toLeftOf="parent"
+        app:layout_constraintHorizontal_bias="0.875"
+        app:layout_constraintBottom_toBottomOf="parent"
+        android:layout_marginBottom="41dp" />
+
+    <Button
+        android:id="@+id/backButton"
+        android:layout_width="wrap_content"
+        android:layout_height="wrap_content"
+        android:text="戻る"
+        app:layout_constraintRight_toLeftOf="@+id/playbackButton"
+        android:layout_marginRight="8dp"
+        app:layout_constraintBottom_toBottomOf="parent"
+        android:layout_marginBottom="41dp" />
+
+    <Button
+        android:id="@+id/skipButton"
+        android:layout_width="wrap_content"
+        android:layout_height="wrap_content"
+        android:text="進む"
+        app:layout_constraintLeft_toRightOf="@+id/playbackButton"
+        android:layout_marginLeft="8dp"
+        app:layout_constraintBottom_toBottomOf="parent"
+        android:layout_marginBottom="41dp" />
+</android.support.constraint.ConstraintLayout>
